@@ -1,0 +1,166 @@
+
+
+.uploadimageWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    color: white;
+    height: 100vh;
+    background: rgba(0,0,0,0.7) url(images/crater.png)no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    width: 50%;
+    padding: 8rem 2rem 2rem 2rem;
+}
+
+.uploadBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    width: 90%;
+    height: 90%;
+    border-right: 1px solid white;
+}
+
+.uploadimageBox{
+    height: 80%;
+    width: 95%;
+    border-radius: 10px;
+}
+
+.uploadimageBox img{
+    border-radius: 10px;
+    height:100%;
+    width: 100%;
+}
+
+
+.uploadwelcomeText{
+    font-size: 2rem;
+    width: 70%;
+}
+
+.uploadContent{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+    padding: 8rem 1rem 1rem 1rem;
+    position: relative;
+}
+
+.uploadContent img{
+    width: 60%;
+    height: 18rem;
+}
+
+.uploadContent button{
+    width: 60%;
+    height: 4rem;
+    background: rgba(0, 0, 0, 0.712);
+    border: none;
+    border-radius: 5px;
+    color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.uploadContent button:hover{
+    background:rgba(17, 17, 17, 0.712) ;
+}
+
+.uploadContent button:active{
+    background:rgba(13, 27, 7, 0.932) ;
+}
+
+.uploadContent input{
+    width: 60%;
+    height: 3rem;
+    background: rgba(252, 251, 250, 0.589);
+    border-radius: 5px;
+    border: none;
+}
+
+.inputText{
+    color: black;
+    padding-left: 1rem;
+}
+
+.inputText::placeholder{
+    color: black;
+}
+
+@media (max-width:768px) {
+    .uploadWrapper{
+        flex-direction: column;
+    }
+
+    .uploadwelcomeText{
+        font-size: 1rem;
+        width: 95%;
+    }
+
+    .uploadimageWrapper{
+        flex-wrap: wrap;
+        height: 50vh;
+        background: rgba(0,0,0,0.7) url(images/crater.png)no-repeat;
+        background-size: cover;
+        background-blend-mode: darken;
+        width: 100%;
+        padding: none;
+    }
+
+    .uploadContent{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+        padding: 1rem;
+        position: relative;
+    }
+
+    .uploadBox{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column; 
+        width: 100%;
+        height: 90vh;
+        border-right: 1px solid white;
+    }
+
+    .uploadimageBox{
+        display: none;
+    }
+
+    .uploadContent input{
+        width: 95%;
+        height: 3rem;
+        background: rgba(252, 251, 250, 0.589);
+        border-radius: 5px;
+        border: none;
+    }
+    
+
+    .uploadContent img{
+        width: 90%;
+        height: 10rem;
+    }
+    
+    .uploadContent button{
+        width: 95%;
+    }
+    
+    
+}
+
+
+

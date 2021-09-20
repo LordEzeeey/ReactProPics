@@ -1,0 +1,118 @@
+/* home */
+.home{
+    background:rgba(0,0,0,0.3) url(images/crater.png)no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 45vh;
+    width: 100%;
+    padding-top: 6rem;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.searchBar{
+    padding: 1.1rem;
+    width: 50%;
+    border-radius: 45px;
+    border: none;
+    background:rgb(11, 11, 26) ;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.home2{
+    border: none;
+    background: transparent;
+    background-size: cover;
+    height: max-content;
+    width: 100%;
+    color: white;
+    padding: 0.5rem 2rem;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.home2 p{
+    font-family: sans-serif;
+    font-size: 1.3rem;
+}
+
+/* images */
+.images{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   padding: 1rem;
+}
+
+.images > *{
+    flex: 1 1 15em;
+}
+
+
+
+
+
+@media (max-width:863px) {
+    .images{
+        justify-content: space-between;
+    }
+    .scrollNav{
+        padding: 0.5rem 0.5rem;
+        background-color: rgb(11, 11, 26);
+    }
+
+    .images{
+        padding-top: 6rem;
+        background: transparent ;
+        height:max-content;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0;
+    }
+    
+    
+
+    
+}
+
+@media (max-width:576px) {
+
+    .images{
+        padding-top: 6rem;
+        background: transparent ;
+        height:max-content;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0;
+    }
+    
+    
+    .home2{
+        border: none;
+        background: transparent;
+        background-size: cover;
+        height: max-content;
+        width: 100%;
+        color: white;
+        padding: 0.5rem 0.5rem;
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

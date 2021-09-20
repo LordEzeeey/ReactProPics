@@ -1,0 +1,135 @@
+.signinWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.imageWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    color: white;
+    height: 100vh;
+    background: rgba(0,0,0,0.7) url(images/crater.png)no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    width: 50%;
+    padding: 2rem;
+}
+
+.signinBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column; 
+    width: 90%;
+    height: 90%;
+    border-right: 1px solid white;
+}
+
+
+.welcomeText{
+    font-size: 2rem;
+    width: 70%;
+}
+
+.signinContent{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.signinContent img{
+    width: 60%;
+    height: 10rem;
+}
+
+.signinContent input{
+    width: 60%;
+    height: 2.5rem;
+    padding: 0 0 0 1rem;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    background: rgba(255, 255, 255, 0.781);
+}
+
+.signinContent button{
+    border-radius: 5px;
+    border: none;
+    width: 60%;
+    height: 3rem;
+}
+
+@media (max-width:768px) {
+    .signinWrapper{
+        flex-direction: column;
+    }
+
+    .welcomeText{
+        font-size: 1rem;
+        width: 95%;
+    }
+
+    .imageWrapper{
+        flex-wrap: wrap;
+        height: 50vh;
+        background: rgba(0,0,0,0.7) url(images/crater.png)no-repeat;
+        background-size: cover;
+        background-blend-mode: darken;
+        width: 100%;
+        padding: none;
+    }
+
+    .signinContent{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+        padding: 1rem;
+        position: relative;
+    }
+
+    .signinBox{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column; 
+        width: 100%;
+        height: 90vh;
+        border-right: 1px solid white;
+    }
+    
+    .signinContent input{
+        width: 90%;
+        height: 2.5rem;
+        padding: 0 0 0 1rem;
+        border: none;
+        border-radius: 5px;
+        color: black;
+    }
+
+    .signinContent img{
+        width: 90%;
+        height: 10rem;
+    }
+    
+    .signinContent button{
+        width: 90%;
+    }
+    
+    
+}
+
